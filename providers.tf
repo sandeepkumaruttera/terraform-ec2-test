@@ -6,10 +6,10 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "remote-state-sandeep"
-    key    = "terraform-ec2-test"
+    bucket = "draws26s-dev"
+    key    = "terraform-jenkins"
     region = "us-east-1"
-    dynamodb_table = "sandeep-locking"
+    dynamodb_table = "draws26s-dev"
   }
 }
 
